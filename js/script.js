@@ -5,18 +5,23 @@ let mailList = ['leonardo@gmail.com', 'raffaello@gmail.com', 'michelangelo@gmail
 
 const accedi = function(){
     let userMail = document.querySelector('#my_email').value;
+    let match = false;
 
     for(let i = 0; i < mailList.length; i++){
         let mailElement = mailList[i];
-        console.log(mailElement);
-        if(userMail === mailElement){
-            document.querySelector('.welcome_user').innerHTML = `Benvenuto: Hai il permesso di giocare`;
-            document.getElementById('my_roll').classList.add ('show');
-        } else {
-            document.querySelector('.welcome_user').innerHTML = `Alt! Non hai i permessi per poter giocare!`
+
+        if (mailElement === userMail){
+            match = true;
         }
     }
+    if(match = true){
+        document.querySelector('.welcome_user').innerHTML = `Puoi accedere`;
+    } else {
+        document.querySelector('.welcome_user').innerHTML = `Alt`;
+    }
     
+
+
 }
 mailSubmitButton.addEventListener('click', accedi);
 
