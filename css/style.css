@@ -1,6 +1,13 @@
+body {
+    background-color: lightgray;
+}
 .hidden {
     opacity: 0;
 }
 .show {
     opacity: 1;
+}
+
+h1 {
+    color: orangered;
 }
