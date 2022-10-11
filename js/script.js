@@ -11,10 +11,10 @@ const accedi = function(){
         let mailElement = mailList[i];
 
         if (mailElement === userMail){
-            match = true;
+            match == true;
         }
     }
-    if(match = true){
+    if(match == true){
         document.querySelector('.welcome_user').innerHTML = `Puoi accedere`;
     } else {
         document.querySelector('.welcome_user').innerHTML = `Alt`;
